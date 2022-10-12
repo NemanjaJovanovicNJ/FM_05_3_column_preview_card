@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #333;
+}
+
+/* Font families: 
+- font-family: 'Lexend Deca', sans-serif; fw:400
+- font-family: 'Big Shoulders Display', cursive; fw:700
+*/
+
+.container {
+  margin: 0 auto;
+  padding: 9rem 2.5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 92rem;
+  display: grid;
+
+  grid-template-columns: repeat(3, auto);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 4.2rem;
+
+  justify-content: space-between;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.icon {
+  width: 7rem;
+  margin-bottom: 3rem;
+}
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 3rem;
+  color: rgb(242, 242, 242);
+}
+.car-desc {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.655);
+  margin-bottom: 8rem;
+}
+.btn:link,
+.btn:visited {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  width: 14.5rem;
+  padding: 1.3rem;
+  border-radius: 5rem;
+  text-align: center;
+
+  cursor: pointer;
+  background-color: rgb(242, 242, 242);
+  margin-top: auto;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  border: none;
+  box-shadow: inset 0 0 4px #fff;
+  background-color: inherit;
+}
+
+.btn-sedans:link,
+.btn-sedans:visited {
+  color: hsl(31, 77%, 52%);
+}
+.btn-sedans:hover,
+.btn-sedans:active {
+  color: #fff;
+}
+
+.btn-suvs:link,
+.btn-suvs:visited {
+  color: hsl(184, 100%, 22%);
+}
+.btn-suvs:hover,
+.btn-suvs:active {
+  color: #fff;
+}
+
+.btn-luxury:link,
+.btn-luxury:visited {
+  color: hsl(179, 100%, 13%);
+}
+.btn-luxury:hover,
+.btn-luxury:active {
+  color: #fff;
+}
+
+@media (max-width: 50em) {
+  .card {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 32.5rem;
+  }
+}
+
+/* @media (max-width: 41em) {
+  .card {
+    max-width: 32.5rem;
+  }
+} ; */
